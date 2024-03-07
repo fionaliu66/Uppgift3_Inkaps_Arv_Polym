@@ -39,7 +39,7 @@ namespace Uppgift3
             }
         }
         public string LName {
-            get { return _fName; }
+            get { return _lName; }
             set
             {
                 if (value.Length >= 3 && value.Length <= 15) _fName = value;
@@ -48,8 +48,8 @@ namespace Uppgift3
 
             }
         }
-        public int Height { get; set; }
-        public int Weight { get; set; }
+        public double Height { get; set; }
+        public double Weight { get; set; }
 
 
 
