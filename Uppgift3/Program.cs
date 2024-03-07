@@ -4,7 +4,19 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            
+            try
+            {
+                Person p = new Person("Fiona", "Faith");
+                p.Age = -35;
+            }catch (ArgumentException aex)
+            {
+                Console.WriteLine(aex.Message);
+            }
+          
+         
+            
+
         }
     }
 }
