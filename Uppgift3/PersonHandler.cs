@@ -16,6 +16,11 @@ namespace Uppgift3
         }
         public Person CreatePerson(int age, string fname,string lname, double height, double weight)
         {
+            //if(string.IsNullOrEmpty(fname) || string.IsNullOrEmpty(lname))
+            //{
+            //    //Send message or throw exception
+            //    Console.WriteLine(new NullInputError().UEMessage());
+            //}
             Person p = new(fname,lname);
             p.Age = age;
             p.Height = height;
