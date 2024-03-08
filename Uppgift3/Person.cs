@@ -52,7 +52,8 @@ namespace Uppgift3
         public double Weight { get; set; }
 
 
-
+        //TO DO
+        //Equals, toString
 
     }
 }

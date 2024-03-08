@@ -8,10 +8,8 @@ namespace Uppgift3
 {
     public class PersonHandler
     {
-        private List<Person> persons;
-        public PersonHandler() { 
-        persons = new List<Person>();  
-        }  
+        private List<Person> personList = new List<Person>();
+      
         public void SetAge(Person pers, int age)
         {
             pers.Age = age; 
@@ -24,5 +22,22 @@ namespace Uppgift3
             p.Weight = weight;
             return p;
         }
+        //other usefull methods
+
+        public void AddPerson(Person p)
+        {
+            personList.Add(p);
+        }
+        public void RemovePerson(Person p)
+        {
+            personList.Remove(p);
+        }
+        public List<Person> GetPersonList() { 
+            return personList; 
+        }
+        public Person GetPersonByName(string fName, string lName) {
+            return personList.Find(p => p.FName == fName && p.LName == lName);
+        }
+
     }
 }
