@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Uppgift3.Animal
 {
-    internal class Horse : Animal
+    public class Horse : Animal
     {
         public double Height {  get; set; }
         public Horse(string name, double vikt, int age, double height) : base(name, vikt, age)
