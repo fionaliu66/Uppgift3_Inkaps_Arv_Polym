@@ -13,5 +13,10 @@ namespace Uppgift3.Animal
         {
             this.legLength = legLength;
         }
+
+        public override string States()
+        {
+            return $"Name: {Name}, Viket: {Vikt}, Age: {Age}, CanFLy ? {CanFly}, Leglength: {legLength}";
+        }
     }
 }

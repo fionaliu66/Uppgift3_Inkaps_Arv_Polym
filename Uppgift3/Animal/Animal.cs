@@ -14,7 +14,11 @@ namespace Uppgift3.Animal
         public int Age { get; set; } = age;
 
         public abstract void DoSound();
-        
+
+        public virtual string States()
+        {
+            return $"Name: {Name}, Viket: {Vikt}, Age: {Age}";
+        }
 
         
     }

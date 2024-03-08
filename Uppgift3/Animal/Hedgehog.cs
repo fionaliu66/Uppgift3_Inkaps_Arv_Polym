@@ -18,5 +18,10 @@ namespace Uppgift3.Animal
         {
             Console.WriteLine("Squeak,Squeak");
         }
+
+        public override string States()
+        {
+            return $"Name: {Name}, Viket: {Vikt}, Age: {Age}, Number of spikes  {NrOfSpikes}";
+        }
     }
 }

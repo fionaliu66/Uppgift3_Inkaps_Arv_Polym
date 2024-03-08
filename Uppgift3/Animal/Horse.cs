@@ -18,5 +18,10 @@ namespace Uppgift3.Animal
         {
             Console.WriteLine("neigh,neigh");
         }
+
+        public override string States()
+        {
+            return $"Name: {Name}, Viket: {Vikt}, Age: {Age}, Height:  {Height}";
+        }
     }
 }

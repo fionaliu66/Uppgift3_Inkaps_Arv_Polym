@@ -18,5 +18,10 @@ namespace Uppgift3.Animal
         {
             Console.WriteLine("Squirm,Squirm");
         }
+
+        public override string States()
+        {
+            return $"Name: {Name}, Viket: {Vikt}, Age: {Age}, Is Herbivore?  {IsHerbivore}";
+        }
     }
 }

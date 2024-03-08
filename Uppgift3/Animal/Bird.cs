@@ -18,5 +18,12 @@ namespace Uppgift3.Animal
         {
             Console.WriteLine("Chirp, Chirp");
         }
+
+
+        public override string States()
+        {
+            return $"Name: {Name}, Viket: {Vikt}, Age: {Age}, CanFLy ? {CanFly}";
+        }
+
     }
 }
