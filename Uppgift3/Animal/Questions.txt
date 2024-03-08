@@ -4,3 +4,9 @@ S: I Bird class
 Q2:
 F:Om alla djur behöver det nya attributet, vart skulle man lägga det då?
 S: I Super class, dvs Animal class
+Q3:
+F:Försök att lägga till en häst i listan av hundar. Varför fungerar inte det?
+S:Det går tyvärr inte att göra en  omvandling from häst till hund när man försöka lägga till en häst i en hund lista.
+Doglista förväntar sig bara objekt instanser av Dog.
+F: Vilken typ måste listan vara för att alla klasser skall kunna lagras tillsammans?
+S:Animals. Wolfman is an animal and it's not a bird or dog. 
