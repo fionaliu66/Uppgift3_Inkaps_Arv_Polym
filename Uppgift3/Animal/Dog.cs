@@ -23,5 +23,10 @@ namespace Uppgift3.Animal
         {
             return $"Name: {Name}, Viket: {Vikt}, Age: {Age}, Breed  {Breed}";
         }
+
+        public string WeDogs()
+        {
+            return "Man's best friend";
+        }
     }
 }

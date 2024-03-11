@@ -2,11 +2,18 @@
 F: Om vi under utvecklingen kommer fram till att samtliga fåglar behöver ett nytt attribut, i vilken klass bör vi lägga det?
 S: I Bird class
 Q2:
-F:Om alla djur behöver det nya attributet, vart skulle man lägga det då?
+F: Om alla djur behöver det nya attributet, vart skulle man lägga det då?
 S: I Super class, dvs Animal class
 Q3:
-F:Försök att lägga till en häst i listan av hundar. Varför fungerar inte det?
-S:Det går tyvärr inte att göra en  omvandling from häst till hund när man försöka lägga till en häst i en hund lista.
-Doglista förväntar sig bara objekt instanser av Dog.
+F: Försök att lägga till en häst i listan av hundar. Varför fungerar inte det?
+S: Det går tyvärr inte att göra en omvandling från häst till hund när man försöka lägga till en häst i en hund lista.
+Doglista förväntar sig bara objekt instansieras av Dog.
 F: Vilken typ måste listan vara för att alla klasser skall kunna lagras tillsammans?
-S:Animals. Wolfman is an animal and it's not a bird or dog. 
+S: Animals. Wolfman is an animal and it's not a bird or dog. Då är animal klassen bäst val här eller ett ytterligare interface alla klasser implementera.
+F: Förklara vad det är som händer
+S:Ingenting special här. Alla djurs stater i djurlista skrevs ut. 
+F: Varför inte?
+S:När man gör en foreach loop av djullista vet kompilatorn bara att dessa objekt är typen Animal, inte deras specifika undertyper till exempel Dog. 
+Även om dessa objekt är faktiskt instanser av typen Dog och Dog ärvt från Animal ser kompilatorn fortfarande bara typen Animal och kan bara komma åt metoder som identifierades i Animal. 
+Man kan komma åt metoder i Dog klassen genom att kontrollera objekt i djurlista och ser om det är en instans av typen Dog. Om ja, konverterar objekten till typen Dog
+och sedan anropar metoden. 
