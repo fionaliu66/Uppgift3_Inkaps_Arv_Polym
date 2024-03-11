@@ -34,7 +34,7 @@ namespace Uppgift3
             //***********************************************
 
             //Animal list loop test
-           // ***********************************************
+            // ***********************************************
             Bird bird = new Bird("Bird", 0.8, 1, true);
             Dog dog = new Dog("Dog", 13, 2, "Tax");
             Flamingo flamingo = new Flamingo("Flamingo", 13, 2, true, 13);

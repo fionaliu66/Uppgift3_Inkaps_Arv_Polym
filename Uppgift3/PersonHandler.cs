@@ -41,7 +41,20 @@ namespace Uppgift3
             return personList; 
         }
         public Person GetPersonByName(string fName, string lName) {
-            return personList.Find(p => p.FName == fName && p.LName == lName);
+            //Set up a defult value here
+            Person p = CreatePerson(18,"Eva","Wang",170,50);
+            if(string.IsNullOrEmpty(fName) || string.IsNullOrEmpty(lName))
+            {
+                Console.WriteLine(new NullInputError().UEMessage()); 
+            }
+            try
+            {
+                personList.Find(p => p.FName == fName && p.LName == lName);
+            }catch(ArgumentException ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            return p;
         }
 
     }
