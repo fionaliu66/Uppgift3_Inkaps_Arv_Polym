@@ -16,7 +16,7 @@ namespace Uppgift3.Animal
 
         public override string States()
         {
-            return $"Name: {Name}, Viket: {Vikt}, Age: {Age}, CanFLy ? {CanFly}, Leglength: {legLength}";
+            return base.States() + $", LegLength: {legLength}";
         }
     }
 }

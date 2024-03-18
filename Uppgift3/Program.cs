@@ -72,12 +72,12 @@ namespace Uppgift3
             //*************************************
             foreach (var animal in animals)
             {
-                //Console.WriteLine(animal.States());
-                if(animal is Dog)
-                {
-                   Dog dogs = (Dog) animal;
-                    Console.WriteLine(dogs.WeDogs());
-                }
+                Console.WriteLine(animal.States());
+                //if(animal is Dog)
+                //{
+                //   Dog dogs = (Dog) animal;
+                //    Console.WriteLine(dogs.WeDogs());
+                //}
             }
             //*************************************
 

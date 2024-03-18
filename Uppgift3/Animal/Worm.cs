@@ -21,7 +21,7 @@ namespace Uppgift3.Animal
 
         public override string States()
         {
-            return $"Name: {Name}, Viket: {Vikt}, Age: {Age}, Is Herbivore?  {IsHerbivore}";
+            return base.States() + $", IsHerbivore: {IsHerbivore}";
         }
     }
 }

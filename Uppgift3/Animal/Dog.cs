@@ -21,7 +21,7 @@ namespace Uppgift3.Animal
 
         public override string States()
         {
-            return $"Name: {Name}, Viket: {Vikt}, Age: {Age}, Breed  {Breed}";
+            return base.States() + $", Breed:  {Breed}";
         }
 
         public string WeDogs()
